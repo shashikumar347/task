@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task addition form</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <h1>Add new task</h2>
+
+        
+    <form id="taskform">
+        <input type="text" class="forminput"  id="title" placeholder="enter title">
+        <input type="text" class="forminput" id="description" placeholder="enter discription">
+        <p id="startdate"></p>
+        <input type="date" class="forminput" id="duedate" min="" required>
+        <button type="submit">Submit</button>
+    </form>
+
+ <div class="divTable">
+       <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>DESCRIPTION</th>
+                <th>START DATE</th>
+                <th>DUE DATE</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+
+        <tbody id="tasktablebody"></tbody>
+    </table>
+
+ </div>
+    <div class="overlay" id="overlay"></div>
+    <h1>Edit task</h3>
+        <div class="popup" id="editpopup">
+        <input type="text" class="forminput" id="edittitle" placeholder="edit your title">
+        <input type="text" class="forminput" id="editdescription" placeholder="edit your description">
+        <input type="date" class="forminput" id="editduedate">
+        <button onclick="updatetask()" class="update">Update</button>
+        <button onclick="closepopup()" class="cancel">Cancel</button>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>

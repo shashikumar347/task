@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.divTable{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+table {
+    /* width: 80%; */
+    border-collapse: collapse;
+    border: 3.5px solid black;
+}
+th, td{
+   padding: 10px;
+   text-align: center;
+   border: 2px solid black;
+   font-size: 20px;
+}
+
+.forminput{
+    width: 180px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+#taskform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 20px;
+    background-color: rgba(60, 154, 72, 0.443);
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
+.cancel,#del {
+    margin-left: 5px;
+    background-color: rgba(255, 0, 0, 0.548);
+}
+.popup{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
